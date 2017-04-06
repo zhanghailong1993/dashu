@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<title>手机端</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/first.css">
+	<style>
+
+	</style>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script>
+	(function(win,doc){
+		function change(){
+			doc.documentElement.style.fontSize=40*doc.documentElement.clientWidth/320+'px';
+		}
+		window.addEventListener('resize',change,false);
+	})(window,document);
+	window.onload=function(){
+		 var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        slidesPerView: 3,
+	        paginationClickable: true,
+	        spaceBetween: 30
+    	});
+		$("#menu_ico").click(function(){
+			$("#menu").css("display","block");
+		});
+		$("#box_1,#box_2,#box_3").click(function(){
+			$("#menu").css("display","none");
+		});
+	};
+	
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="hd" class="clearfix">
+			<em id="menu_ico" class="fl"></em>
+			<div id="menu">
+				<ul id="box">
+					<li><a href="" id="box_1">产品介绍</a></li>
+					<li><a href="#t1" id="box_2">关于我们</a></li>
+					<li><a href="#t4" id="box_3">联系我们</a></li>
+				</ul>
+			</div>
+			<span id="hd_word" class="fl">大数医达</span>
+		</header>
+		<section id="sec">
+			<div id="bac" class="clearfix">
+				<span id="smart" class="fl">人工智能的一小步，</span>
+				<span id="heal" class="fl">医疗健康</span>
+				<span id="big" class="fl">一大步</span>
+			</div>
+			<div class="artic">
+				<h3 id="t1" class="ti clearfix"><span id="num" class="fl">01</span><span id="first_word" class="fl">关于我们</span></h3>
+				<em class="line"></em>
+				<p id="cont">北京大数医达科技有限公司是一家在人工智能、大数据、云计算方面拥有国际领先水品的高科技企业，专注于多源异构医疗数据处理、深度挖掘与机器学习。</p>
+			</div>
+			<div class="swiper-container">
+	        	<div class="swiper-wrapper">
+		             <div class="swiper-slide">
+			             <em id="one" class="ico"></em>
+			             <span class="ico_wor">顶尖团队</span>
+			             <span class="ico_eng">Elite</span>
+			             <span class="ico_eng">team</span>
+		             </div>
+		            <div class="swiper-slide">
+			             <em id="two" class="ico"></em>
+			             <span class="ico_wor">医学专家</span>
+			             <span class="ico_eng">Medical</span>
+			             <span class="ico_eng">experts</span>
+		             </div>
+		             <div class="swiper-slide">
+			             <em id="three" class="ico"></em>
+			             <span class="ico_wor">国际领先</span>
+			             <span class="ico_eng">Leading</span>
+			             <span class="ico_eng">interational</span>
+		             </div>
+		             <div class="swiper-slide">
+			            <em id="four" class="ico"></em>
+			             <span class="ico_wor">顶尖团队</span>
+			             <span class="ico_eng">Elite</span>
+			             <span class="ico_eng">team</span>
+		             </div>
+		             <div class="swiper-slide">
+			             <em id="five" class="ico"></em>
+			             <span class="ico_wor">医学专家</span>
+			             <span class="ico_eng">Medical</span>
+			             <span class="ico_eng">experts</span>
+		             </div>
+		             <div class="swiper-slide">
+			             <em id="six" class="ico"></em>
+			             <span class="ico_wor">国际领先</span>
+			             <span class="ico_eng">Leading</span>
+			             <span class="ico_eng">interational</span>
+		             </div>
+		             <div class="swiper-slide">
+			             <em id="seven" class="ico"></em>
+			             <span class="ico_wor">医学专家</span>
+			             <span class="ico_eng">Medical</span>
+			             <span class="ico_eng">experts</span>
+		             </div>
+	        	</div>
+   		 	</div>
+			<div class="artic">
+				<h3 class="ti clearfix"><span id="num" class="fl">02</span><span id="first_word" class="fl">团队领袖——邓侃CTO</span></h3>
+				<em class="line"></em>
+				<p id="cont">团队领袖邓侃博士是互联网领域著名技术专家，师从大数据学科创始人——美国卡内基梅隆大学创始人（CMU）计算机学院院长Andrew Moore教授，专业从事机器学习和数据挖掘，曾Oracle主任架构师、百度搜索高级技术总监等职务。</p>
+			</div>
+			<div class="artic black">
+				<h3 class="ti clearfix"><span id="num" class="fl">03</span><span id="first_word" class="fl">我们的愿景</span></h3>
+				<em class="line1 line"></em>
+				<p id="cont">大数医达拥有自主知识产权的医疗大数据系统，该系统把超大规模的云计算系统，深度学习和数据挖掘等大数据算法，应用到医疗领域，自动化、智能化融汇多源异构的医疗数据，把自然语言的非结构化病例，自动转化为结构化病例，从中挖掘出医生临床诊断和治疗经验，助力医疗大数据产业发展，促进医疗卫生健康事业进步，服务社会，造福人类。</p>
+				<video src="hd.mp4" id="vi" controls></video>
+				<!-- <div id="ar"><span id="arrow"></span></div> -->
+			</div>
+			<div class="artic">
+				<h3 id="t4" class="ti clearfix"><span id="num" class="fl">04</span><span id="first_word" class="fl">联系我们</span></h3>
+				<em class="line"></em>
+				<p id="cont"><span id="add">地址：北京市海淀区东北旺西路8号中关村软件园一期3号楼3B区1206室</span>
+				<span class="eml">公司邮箱：service@iyoudoctor.com</span>
+				<span class="eml">公司网址：www.iyoudoctor.com</span></p>
+			</div>
+			<img src="img/2.png" alt="" id="geo">
+		</section>
+		<footer id="foot"><p>京ICP备16013105号-1</p></footer>
+	</div>
+</body>
+</html>

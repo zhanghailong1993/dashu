@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<title>手机端</title>
+	<link rel="stylesheet" href="css/base.css">
+	<style>
+	body{ width:100%;font-size:40px; }
+	</style>
+	<script>
+	(function(win,doc){
+		function change(){
+			doc.documentElement.style.fontSize=40*doc.documentElement.clientWidth/320+'px';
+		}
+		window.addEventListener('resize',change,false);
+	})(window,document);
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="hd" class="clearfix">
+			<em id="menu_ico" class="fl"></em><span id="hd_word" class="fl">大数医达</span>
+		</header>
+		<section id="sec"></section>
+		<footer id="foot"></footer>
+	</div>
+</body>
+</html>
